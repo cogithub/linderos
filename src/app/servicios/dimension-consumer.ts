@@ -8,7 +8,9 @@ import { Observable } from 'rxjs';
 export class ZipFactService {
   private baseUrl = 'http://10.1.64.119:6060/api/v1/cube/get';
 
-  constructor(private http: HttpClient) {}
+  zipFactData: any;
+
+  constructor(private zipFactService: ZipFactService, private http: HttpClient) {}
 
   /**
    * Obtiene los datos de zipfact para el año 2025 con el filtro statushistory.

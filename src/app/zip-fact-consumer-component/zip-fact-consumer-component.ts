@@ -2,6 +2,8 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { ZipFactService } from '../servicios/dimension-consumer';
 import { forkJoin } from 'rxjs';
 import { JsonPipe, CommonModule } from '@angular/common';
+import * as pako from 'pako';
+
 
 @Component({
   selector: 'app-zip-fact-consumer',
