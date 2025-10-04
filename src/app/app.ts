@@ -9,5 +9,6 @@ import { ZipFactConsumerComponent } from './zip-fact-consumer-component/zip-fact
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('linderos');
+  estadoSeleccionado:any
+  protected readonly title = signal('título para linderos');
 }

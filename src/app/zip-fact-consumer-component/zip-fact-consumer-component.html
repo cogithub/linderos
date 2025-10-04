@@ -1,1 +1,18 @@
-<p>zip-fact-consumer-component works!</p>
+<!-- archivo: filtro-select.component.html -->
+<label for="estado">Filtrar por estado:</label>
+<select id="estado" [(ngModel)]="seleccionada">
+  <option value="">Todos</option>
+  <option *ngFor="let opcion of opciones" [value]="opcion">{{ opcion }}</option>
+</select>
+
+<table>
+  <thead>
+    <tr><th>Nombre</th><th>Estado</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of filtrados">
+      <td>{{ item.nombre }}</td>
+      <td>{{ item.estado }}</td>
+    </tr>
+  </tbody>
+</table>
