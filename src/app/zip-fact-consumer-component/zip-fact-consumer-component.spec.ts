@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataDashboard } from './data-dashboard';
+import { ZipFactConsumerComponent } from './zip-fact-consumer-component';
 
-describe('DataDashboard', () => {
-  let component: DataDashboard;
-  let fixture: ComponentFixture<DataDashboard>;
+describe('ZipFactConsumerComponent', () => {
+  let component: ZipFactConsumerComponent;
+  let fixture: ComponentFixture<ZipFactConsumerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DataDashboard]
+      imports: [ZipFactConsumerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DataDashboard);
+    fixture = TestBed.createComponent(ZipFactConsumerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

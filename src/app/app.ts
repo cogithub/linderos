@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ZipFactConsumerComponent } from './zip-fact-consumer-component/zip-fact-consumer-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ZipFactConsumerComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
