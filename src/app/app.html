@@ -14,14 +14,14 @@
           </th>
         </tr>
         <tr style="background-color: #eceff1;">
-          <th style="border: 1px solid #90a4ae; padding: 0.5rem;" *ngFor="let col of Object.keys(filtro)">
+          <th style="border: 1px solid #90a4ae; padding: 0.5rem;" *ngFor="let col of columnas">
             {{ col }}
           </th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let estado of estadosFiltrados()">
-          <td style="border: 1px solid #ccc; padding: 0.5rem;" *ngFor="let col of Object.keys(filtro)">
+          <td style="border: 1px solid #ccc; padding: 0.5rem;" *ngFor="let col of columnas">
             {{ estado[col] }}
           </td>
         </tr>

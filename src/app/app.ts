@@ -26,7 +26,7 @@ export class AppComponent {
   constructor(private estadoService: EstadoService) {}
 
   ngOnInit() {
-    this.estadoService.getEstadosDesdeCSV().subscribe(data => {
+      this.estadoService.getEstadosDesdeCSV().subscribe(data => {
       this.estados = data;
       this.generarFiltrosUnicos();
     });
