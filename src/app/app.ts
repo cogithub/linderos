@@ -1,14 +1,15 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ZipFactConsumerComponent } from './zip-fact-consumer-component/zip-fact-consumer-component';
+// archivo: app.component.ts
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ZipFactConsumerComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [CommonModule, FormsModule],
+  templateUrl: './app.html'
 })
-export class App {
-  estadoSeleccionado:any
-  protected readonly title = signal('título para linderos');
+export class AppComponent {
+  estados: string[] = ['READY', 'DELAY', 'STANDBY', 'MAINT', 'OUTOFPLAN'];
+  estadoSeleccionado: string = '';
 }
