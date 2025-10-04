@@ -7,3 +7,5 @@ export interface EstadoDetalle {
   typeStatus: string;
   detailStatus: string;
 }
+
+
