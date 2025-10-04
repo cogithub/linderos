@@ -5,7 +5,7 @@ import { Observable, forkJoin } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DataConsumerService {
+export class DimensionConsumerService {
   private baseUrl = 'http://10.1.64.119:6060/api/v1/cube/get';
 
   constructor(private http: HttpClient) {}
