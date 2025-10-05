@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Diagnóstico</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let paciente of pacientes">
+      <td>{{ paciente.nombre }}</td>
+      <td>{{ paciente.edad }}</td>
+      <td>{{ paciente.diagnostico }}</td>
+    </tr>
+  </tbody>
+</table>

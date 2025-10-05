@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { EstadoService } from './servicios/EstadoService';
-
+import { RouterLink } from '@angular/router';
+RouterLink
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './app.html'
 })
 export class AppComponent {
@@ -28,6 +29,7 @@ export class AppComponent {
   ngOnInit() {
       this.estadoService.getEstadosDesdeCSV().subscribe(data => {
       this.estados = data;
+      console.log("*** ",data);
       this.generarFiltrosUnicos();
     });
   }
